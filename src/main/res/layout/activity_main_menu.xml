@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#994a1d"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="edu.ramapo.kcalabro.a3stones.View.MainMenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_stone_border"
+            android:id="@+id/whiteStoneSelector2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clear_stone_border"
+            android:id="@+id/clearStoneSelector2"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_stone_border"
+            android:id="@+id/blackStoneSelector2"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 Stones"
+        android:fontFamily="cursive"
+        android:id="@+id/title_screen1"
+        android:textColor="#000000"
+        android:textSize="120sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_stone_border"
+            android:id="@+id/blackStoneSelector"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clear_stone_border"
+            android:id="@+id/clearStoneSelector"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_stone_border"
+            android:id="@+id/whiteStoneSelector"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   New Game   "
+        android:textSize="40sp"
+        android:id="@+id/newGameButton"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="startNewGame"/>
+
+    <Spinner
+        android:textStyle="bold"
+        android:src="@drawable/button_border"
+        android:id="@+id/tournScoreSpinner"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:background="@drawable/button_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/tournScoreArray">
+    </Spinner>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Rules List  "
+            android:textSize="40sp"
+            android:id="@+id/rulesButton"
+            android:background="@drawable/button_border"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:onClick="displayRulesActivity"/>
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Load Game  "
+        android:textSize="40sp"
+        android:id="@+id/loadGameButton"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="loadGame"/>
+
+    <Spinner
+        android:textStyle="bold"
+        android:src="@drawable/button_border"
+        android:id="@+id/fileSpinner"
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:background="@drawable/button_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/filesArray"
+        android:layout_marginBottom="60dp">
+    </Spinner>
+
+    </LinearLayout>
+
+</LinearLayout>

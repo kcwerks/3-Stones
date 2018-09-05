@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">3 Stones</string>
+
+    <string-array name="filesArray">
+        <item>Select File: </item>
+        <item>savedGame.txt</item>
+    </string-array>
+
+    <string-array name ="tournScoreArray">
+        <item>Select Tournament Score Limit: </item>
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>175</item>
+        <item>200</item>
+    </string-array>
+
+</resources>

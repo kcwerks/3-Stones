@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_winner"
+    android:layout_width="match_parent"
+    android:background="#994a1d"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="edu.ramapo.kcalabro.a3stones.View.EndTournamentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 Stones"
+        android:fontFamily="cursive"
+        android:id="@+id/title_screen1"
+        android:textColor="#000000"
+        android:textSize="120sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/white_background"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:text="Tournament Score - White Stones:"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:fontFamily="casual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/whiteStonesTournScore" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/black_background"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:gravity="center">
+
+        <TextView
+            android:text="Tournament Score - Black Stones:"
+            android:textSize="40sp"
+            android:textColor="#ffffff"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/blackStonesTournScore"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/tournScoreLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tournament Score Limit:"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:fontFamily="casual"/>
+
+    <TextView
+        android:text="Tournament Winner: "
+        android:textSize="50sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/winner"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_border"
+        android:text="  New Tournament  "
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="60sp" />
+
+</LinearLayout>

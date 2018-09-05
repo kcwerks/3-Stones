@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#994a1d"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="edu.ramapo.kcalabro.a3stones.View.SecondaryMenuActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 Stones"
+        android:fontFamily="cursive"
+        android:id="@+id/title_screen1"
+        android:textColor="#000000"
+        android:textSize="120sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Mode Selection"
+        android:textSize="80sp"
+        android:fontFamily="casual"
+        android:layout_marginBottom="100dp"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Single Player   "
+        android:textSize="40sp"
+        android:id="@+id/singlePlayerButton"
+        android:fontFamily="sans-serif-smallcaps"
+        android:background="@drawable/button_border" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Local Multiplayer  "
+        android:textSize="40sp"
+        android:id="@+id/localMultiplayerButton"
+        android:fontFamily="sans-serif-smallcaps"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
